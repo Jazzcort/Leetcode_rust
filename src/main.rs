@@ -16,7 +16,16 @@ mod util;
 // mod p1704_determine_if_string_halves_are_alike;
 // mod p2225_find_players_with_zero_or_one_losses;
 // mod p380_insert_delete_get_random;
-mod p913_minimum_falling_path_sum;
+// mod p913_minimum_falling_path_sum;
+// mod p128_longest_consecutive_sequence;
+// mod p907_sum_of_subarray_minimums;
+// mod p198_house_robber;
+// mod p1143_longest_common_subsequence;
+// mod p576_out_of_boundary_paths;
+// mod p1074_number_of_submatrices_that_sum_to_target;
+// mod p232_implement_queue_using_stacks;
+// mod p739_daily_temperatures;
+mod p2966_divide_array_into_arrays_with_max_difference;
 
 // use crate::p455_assign_cookie::solution as p455;
 // use crate::p2610_convert_an_array_into_a_2D_array_with_conditions::solution as p2610;
@@ -33,7 +42,16 @@ mod p913_minimum_falling_path_sum;
 // use p1704_determine_if_string_halves_are_alike::solution as p1704;
 // use p2225_find_players_with_zero_or_one_losses::solution as p2225;
 // use p380_insert_delete_get_random::solution::RandomizedSet;
-use p913_minimum_falling_path_sum::solution as p913;
+// use p913_minimum_falling_path_sum::solution as p913;
+// use p128_longest_consecutive_sequence::solution as p128;
+// use p907_sum_of_subarray_minimums::solution as p907;
+// use p198_house_robber::solution as p198;
+// use p1143_longest_common_subsequence::solution as p1143;
+// use p576_out_of_boundary_paths::solution as p576;
+// use p1074_number_of_submatrices_that_sum_to_target::solution as p1074;
+// use p232_implement_queue_using_stacks::solution as p232;
+// use p739_daily_temperatures::solution as p739;
+use p2966_divide_array_into_arrays_with_max_difference::solution as p2966;
 
 fn main() {
     // dbg!(p455::Solution::find_content_children(vec![1,2,3], vec![1,1]));
@@ -61,6 +79,20 @@ fn main() {
     // tmp.insert(8);
     // tmp.insert(90);
     // dbg!(tmp.get_random());
-    dbg!(p913::Solution::min_falling_path_sum(vec![vec![2,1,3],vec![6,5,4],vec![7,8,9]]));
+    // dbg!(p913::Solution::min_falling_path_sum(vec![vec![2,1,3],vec![6,5,4],vec![7,8,9]]));
+    // dbg!(p128::Solution::longest_consecutive(vec![100,4,200,1,3,2]));
+    // dbg!(p907::Solution::sum_subarray_mins(vec![3,1,2,4]));
+    // dbg!(p198::Solution::rob(vec![2,7,9,3,1]));
+    // dbg!(p1143::Solution::longest_common_subsequence("abcde".to_string(), "ace".to_string()));
+    // dbg!(p576::Solution::find_paths(2, 2, 2, 0, 0));
+    // dbg!(p1074::Solution::num_submatrix_sum_target(vec![vec![0,1,0],vec![1,1,1],vec![0,1,0]], 1));
+    // let mut obj = p232::MyQueue::new();
+    // obj.push(1);
+    // obj.push(2);
+    // dbg!(obj.peek());
+    // dbg!(obj.pop());
+    // dbg!(obj.empty());
+    // dbg!(p739::Solution::daily_temperatures(vec![73,74,75,71,69,72,76,73]));
+    dbg!(p2966::Solution::divide_array(vec![1,3,4,8,7,9,3,5,1], 2));
 
 }
