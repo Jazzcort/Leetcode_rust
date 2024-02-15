@@ -25,7 +25,12 @@ mod util;
 // mod p1074_number_of_submatrices_that_sum_to_target;
 // mod p232_implement_queue_using_stacks;
 // mod p739_daily_temperatures;
-mod p2966_divide_array_into_arrays_with_max_difference;
+// mod p2966_divide_array_into_arrays_with_max_difference;
+// mod p49_group_anagrams;
+// mod p451_sort_characters_by_frequency;
+// mod p2108_find_first_palindromic_string_in_the_array;
+// mod p2149_rearrange_array_elements_by_sign;
+mod p2971_find_polygon_with_the_largest_perimeter;
 
 // use crate::p455_assign_cookie::solution as p455;
 // use crate::p2610_convert_an_array_into_a_2D_array_with_conditions::solution as p2610;
@@ -51,7 +56,12 @@ mod p2966_divide_array_into_arrays_with_max_difference;
 // use p1074_number_of_submatrices_that_sum_to_target::solution as p1074;
 // use p232_implement_queue_using_stacks::solution as p232;
 // use p739_daily_temperatures::solution as p739;
-use p2966_divide_array_into_arrays_with_max_difference::solution as p2966;
+// use p2966_divide_array_into_arrays_with_max_difference::solution as p2966;
+// use p49_group_anagrams::solution as p49;
+// use p451_sort_characters_by_frequency::solution as p451;
+// use p2108_find_first_palindromic_string_in_the_array::solution as p2108;
+// use p2149_rearrange_array_elements_by_sign::solution as p2149;
+use p2971_find_polygon_with_the_largest_perimeter::solution as p2971;
 
 fn main() {
     // dbg!(p455::Solution::find_content_children(vec![1,2,3], vec![1,1]));
@@ -93,6 +103,11 @@ fn main() {
     // dbg!(obj.pop());
     // dbg!(obj.empty());
     // dbg!(p739::Solution::daily_temperatures(vec![73,74,75,71,69,72,76,73]));
-    dbg!(p2966::Solution::divide_array(vec![1,3,4,8,7,9,3,5,1], 2));
+    // dbg!(p2966::Solution::divide_array(vec![1,3,4,8,7,9,3,5,1], 2));
+    // dbg!(p49::Solution::group_anagrams(vec!["tea".to_string(),"and".to_string(),"ace".to_string(),"ad".to_string(),"eat".to_string(),"dans".to_string()]));
+    // dbg!(p451::Solution::frequency_sort("tree".to_string()));
+    // dbg!(p2108::Solution::first_palindrome(vec!["acb".to_string(), "aabbaa".to_string()]));
+    // dbg!(p2149::Solution::rearrange_array(vec![3,1,-2,-5,2,-4]));
+    dbg!(p2971::Solution::largest_perimeter(vec![1,12,1,2,5,50,3]));
 
 }
