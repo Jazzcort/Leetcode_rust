@@ -30,7 +30,10 @@ mod util;
 // mod p451_sort_characters_by_frequency;
 // mod p2108_find_first_palindromic_string_in_the_array;
 // mod p2149_rearrange_array_elements_by_sign;
-mod p2971_find_polygon_with_the_largest_perimeter;
+// mod p2971_find_polygon_with_the_largest_perimeter;
+// mod p1642_furthest_building_you_can_reach;
+// mod p787_cheapest_flights_within_k_stops;
+mod p513_find_bottom_left_tree_values;
 
 // use crate::p455_assign_cookie::solution as p455;
 // use crate::p2610_convert_an_array_into_a_2D_array_with_conditions::solution as p2610;
@@ -61,7 +64,12 @@ mod p2971_find_polygon_with_the_largest_perimeter;
 // use p451_sort_characters_by_frequency::solution as p451;
 // use p2108_find_first_palindromic_string_in_the_array::solution as p2108;
 // use p2149_rearrange_array_elements_by_sign::solution as p2149;
-use p2971_find_polygon_with_the_largest_perimeter::solution as p2971;
+// use p2971_find_polygon_with_the_largest_perimeter::solution as p2971;
+// use p1642_furthest_building_you_can_reach::solution as p1642;
+// use p787_cheapest_flights_within_k_stops::solution as p787;
+use p513_find_bottom_left_tree_values::solution as p513;
+
+use crate::util::tree_node::Tree;
 
 fn main() {
     // dbg!(p455::Solution::find_content_children(vec![1,2,3], vec![1,1]));
@@ -108,6 +116,46 @@ fn main() {
     // dbg!(p451::Solution::frequency_sort("tree".to_string()));
     // dbg!(p2108::Solution::first_palindrome(vec!["acb".to_string(), "aabbaa".to_string()]));
     // dbg!(p2149::Solution::rearrange_array(vec![3,1,-2,-5,2,-4]));
-    dbg!(p2971::Solution::largest_perimeter(vec![1,12,1,2,5,50,3]));
+    // dbg!(p2971::Solution::largest_perimeter(vec![1,12,1,2,5,50,3]));
+    // dbg!(p1642::Solution::furthest_building(vec![4,12,2,7,3,18,20,3,19], 10, 2));
+    // dbg!(p787::Solution::find_cheapest_price(
+    //     4,
+    //     vec![
+    //         vec![0, 1, 100],
+    //         vec![1, 2, 100],
+    //         vec![2, 0, 100],
+    //         vec![1, 3, 600],
+    //         vec![2, 3, 200]
+    //     ],
+    //     0,
+    //     3,
+    //     1
+    // ));
+    // dbg!(p787::Solution::find_cheapest_price(
+    //     3,
+    //     vec![
+    //         vec![0, 1, 100],
+    //         vec![1, 2, 100],
+    //         vec![0, 2, 500]
+    //     ],
+    //     0,
+    //     2,
+    //     1
+    // ));
+    // dbg!(p787::Solution::find_cheapest_price(
+    //     4,
+    //     vec![
+    //         vec![0, 1, 1],
+    //         vec![0, 2, 5],
+    //         vec![1, 2, 1],
+    //         vec![2, 3, 1]
+    //     ],
+    //     0,
+    //     3,
+    //     1
+    // ));
 
+    let tree = Tree::from(vec![Some(1), Some(2), Some(3), Some(4), None, Some(5), Some(6), None, None, Some(7)]);
+
+    dbg!(p513::Solution::find_bottom_left_value(tree.get_head()));
 }

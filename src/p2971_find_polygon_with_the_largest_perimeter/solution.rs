@@ -1,5 +1,3 @@
-use std::iter::Sum;
-
 pub struct Solution {}
 
 impl Solution {
