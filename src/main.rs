@@ -33,7 +33,30 @@ mod util;
 // mod p2971_find_polygon_with_the_largest_perimeter;
 // mod p1642_furthest_building_you_can_reach;
 // mod p787_cheapest_flights_within_k_stops;
-mod p513_find_bottom_left_tree_values;
+// mod p513_find_bottom_left_tree_values;
+// mod p1609_even_odd_tree;
+// mod p948_bag_of_tokens;
+// mod p1750_minimum_length_of_string_after_deleting_similar_ends;
+// mod p876_middle_of_the_linked_list;
+// mod p791_custom_sort_string;
+// mod p1171_remove_zero_sum_consecutive_nodes_from_linked_list;
+// mod p2962_count_subarrays_where_max_element_appears_at_least_k_times;
+// mod p1249_minimum_remove_to_make_valid_parentheses;
+// mod p678_valid_parenthesis_string;
+// mod p950_reveal_cards_in_increasing_order;
+// mod p129_sum_root_to_leaf_numbers;
+// mod p85_maximal_rectangle;
+// mod p623_add_one_row_to_tree;
+// mod p988_smallest_string_starting_from_leaf;
+// mod p200_number_of_islands;
+// mod p1971_find_if_path_exists_in_graph;
+// mod p752_open_the_lock;
+// mod p310_minimum_height_trees;
+// mod p2487_remove_nodes_from_linked_list;
+// mod p2816_double_a_number_represented_as_a_linked_list;
+// mod p506_relative_ranks;
+// mod p786_kth_smallest_prime_fraction;
+mod p1219_path_with_maximum_gold;
 
 // use crate::p455_assign_cookie::solution as p455;
 // use crate::p2610_convert_an_array_into_a_2D_array_with_conditions::solution as p2610;
@@ -67,8 +90,32 @@ mod p513_find_bottom_left_tree_values;
 // use p2971_find_polygon_with_the_largest_perimeter::solution as p2971;
 // use p1642_furthest_building_you_can_reach::solution as p1642;
 // use p787_cheapest_flights_within_k_stops::solution as p787;
-use p513_find_bottom_left_tree_values::solution as p513;
+// use p513_find_bottom_left_tree_values::solution as p513;
+// use p1609_even_odd_tree::solution as p1609;
+// use p948_bag_of_tokens::solution as p948;
+// use p1750_minimum_length_of_string_after_deleting_similar_ends::solution as p1750;
+// use p876_middle_of_the_linked_list::solution as p876;
+// use p791_custom_sort_string::solution as p791;
+// use p1171_remove_zero_sum_consecutive_nodes_from_linked_list::solution as p1171;
+// use p2962_count_subarrays_where_max_element_appears_at_least_k_times::solution as p2962;
+// use p1249_minimum_remove_to_make_valid_parentheses as p1249;
+// use p678_valid_parenthesis_string::solution as p678;
+// use p950_reveal_cards_in_increasing_order::solution as p950;
+// use p129_sum_root_to_leaf_numbers::solution as p129;
+// use p85_maximal_rectangle::solution as p85;
+// use p623_add_one_row_to_tree::solution as p623;
+// use p988_smallest_string_starting_from_leaf::solution as p988;
+// use p200_number_of_islands::solution as p200;
+// use p1971_find_if_path_exists_in_graph::solution as p1971;
+// use p752_open_the_lock::solution as p752;
+// use p310_minimum_height_trees::solution as p310;
+// use p2487_remove_nodes_from_linked_list::solution as p2487;
+// use p2816_double_a_number_represented_as_a_linked_list::solution as p2816;
+// use p506_relative_ranks::solution as p506;
+// use p786_kth_smallest_prime_fraction::solution as p786;
+use p1219_path_with_maximum_gold::solution as p1219;
 
+use crate::util::linked_list::ListNode;
 use crate::util::tree_node::Tree;
 
 fn main() {
@@ -155,7 +202,88 @@ fn main() {
     //     1
     // ));
 
-    let tree = Tree::from(vec![Some(1), Some(2), Some(3), Some(4), None, Some(5), Some(6), None, None, Some(7)]);
+    // let tree = Tree::from(vec![Some(1), Some(2), Some(3), Some(4), None, Some(5), Some(6), None, None, Some(7)]);
+    // dbg!(p513::Solution::find_bottom_left_value(tree.get_head()));
 
-    dbg!(p513::Solution::find_bottom_left_value(tree.get_head()));
+    // let tree = Tree::from(vec![
+    //     Some(1),
+    //     Some(10),
+    //     Some(4),
+    //     Some(3),
+    //     None,
+    //     Some(7),
+    //     Some(9),
+    //     Some(12),
+    //     Some(8),
+    //     Some(6),
+    //     None,
+    //     None,
+    //     Some(2),
+    // ]);
+    // dbg!(p1609::Solution::is_even_odd_tree(tree.get_head()));
+    // dbg!(p948::Solution::bag_of_tokens_score(vec![100,200,300,400], 200));
+    // dbg!(p1750::Solution::minimum_length("bbbbbbbbbbbbbbbbbbbbbbbbbbbabbbbbbbbbbbbbbbccbcbcbccbbabbb".to_string()));
+
+    // let lst = ListNode::from(vec![1, 2, 3, 4, 5, 6]);
+    // dbg!(&lst);
+    // dbg!(p876::Solution::middle_node(Some(Box::new(lst))));
+    // dbg!(p791::Solution::custom_sort_string(String::from("bac"), String::from("abcd")));
+    // let head = ListNode::from(vec![0]);
+    // dbg!(p1171::Solution::remove_zero_sum_sublists(Some(Box::new(head))));
+    // dbg!(p2962::Solution::count_subarrays(vec![1,3,2,3,3], 2));
+    // dbg!(p1249::solution::Solution::min_remove_to_make_valid(String::from("lee(t(c)o)de)")));
+    // dbg!(p678::Solution::check_valid_string("((((()(()()()*()(((((*)()*(**(())))))(())()())(((())())())))))))(((((())*)))()))(()((*()*(*)))(*)()".to_string()));
+    // dbg!(p950::Solution::deck_revealed_increasing(vec![17,13,11,2,3,5,7]));
+    // let tree = Tree::from(vec![
+    //     Some(4),
+    //     Some(9),
+    //     Some(0),
+    //     Some(5),
+    //     Some(1)
+    // ]);
+    // dbg!(p129::Solution::sum_numbers(tree.get_head()));
+    // dbg!(p85::Solution::maximal_rectangle(vec![
+    //     vec!['1','0','1','0','0'],
+    //     vec!['1','0','1','1','1'],
+    //     vec!['1','1','1','1','1'],
+    //     vec!['1','0','0','1','0']
+    // ]));
+    // let tree = Tree::from(wrap_vec!["4,2,null,3,1"]);
+    // dbg!(p623::Solution::add_one_row(tree.get_head(), 1, 1));
+    // let tree = Tree::from(wrap_vec!["0,1,2,3,4,3,4"]);
+    // dbg!(p988::Solution::smallest_from_leaf(tree.get_head()));
+    // dbg!(p200::Solution::num_islands(vec![
+    //     vec!['1', '1', '0', '0', '0'],
+    //     vec!['1', '1', '0', '0', '0'],
+    //     vec!['0', '0', '1', '0', '0'],
+    //     vec!['0', '0', '0', '1', '1'],
+    // ]));
+    // dbg!(p1971::Solution::valid_path(
+    //     6,
+    //     vec![vec![0, 1], vec![0, 2], vec![3, 5], vec![5, 4], vec![4, 3],],
+    //     0,
+    //     5
+    // ));
+    // dbg!(p752::Solution::open_lock(
+    // vec![
+    // "0201".to_string(),
+    // "0101".to_string(),
+    // "0102".to_string(),
+    // "1212".to_string(),
+    // "2002".to_string()
+    // ],
+    // "0202".to_string()
+    // ));
+    // dbg!(p310::Solution::find_min_height_trees(
+    //     4,
+    //     vec![vec![1, 0], vec![1, 2], vec![1, 3]]
+    // ));
+    // let a = Box::new(ListNode::from(vec![5,2,13,3,8]));
+    // dbg!(p2487::Solution::remove_nodes(Some(a)));
+    // let head = Box::new(ListNode::from(vec![1,8,9]));
+    // dbg!(p2816::Solution::double_it(Some(head)));
+    // dbg!(p506::Solution::find_relative_ranks(vec![10,3,8,9,4]));
+    // dbg!(p786::Solution::kth_smallest_prime_fraction(vec![1, 2, 3, 5], 3));
+    dbg!(p1219::Solution::get_maximum_gold(vec![vec![1,0,7], vec![2,0,6], vec![3,4,5], vec![0,3,0], vec![9,0,20]]));
+
 }
