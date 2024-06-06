@@ -56,7 +56,18 @@ mod util;
 // mod p2816_double_a_number_represented_as_a_linked_list;
 // mod p506_relative_ranks;
 // mod p786_kth_smallest_prime_fraction;
-mod p1219_path_with_maximum_gold;
+// mod p1219_path_with_maximum_gold;
+// mod p1325_delete_leaves_with_a_given_value;
+// mod p3068_find_the_maximum_sum_of_node_values;
+// mod p131_palindrome_partitioning;
+// mod p2597_the_number_of_beautiful_subsets;
+// mod p1255_maximum_score_words_formed_by_letters;
+// mod p140_word_break_ii;
+// mod p139_word_break;
+// mod p1208_get_equal_substrings_within_budget;
+// mod p260_single_number_iii;
+// mod p1442_count_triplets_that_can_form_two_arrays_of_equal_xor;
+mod p846_hand_of_straight;
 
 // use crate::p455_assign_cookie::solution as p455;
 // use crate::p2610_convert_an_array_into_a_2D_array_with_conditions::solution as p2610;
@@ -113,7 +124,18 @@ mod p1219_path_with_maximum_gold;
 // use p2816_double_a_number_represented_as_a_linked_list::solution as p2816;
 // use p506_relative_ranks::solution as p506;
 // use p786_kth_smallest_prime_fraction::solution as p786;
-use p1219_path_with_maximum_gold::solution as p1219;
+// use p1219_path_with_maximum_gold::solution as p1219;
+// use p1325_delete_leaves_with_a_given_value::solution as p1325;
+// use p3068_find_the_maximum_sum_of_node_values::solution as p3068;
+// use p131_palindrome_partitioning::solution as p131;
+// use p2597_the_number_of_beautiful_subsets::solution as p2597;
+// use p1255_maximum_score_words_formed_by_letters::solution as p1255;
+// use p140_word_break_ii::solution as p140;
+// use p139_word_break::solution as p139;
+// use p1208_get_equal_substrings_within_budget::solution as p1208;
+// use p260_single_number_iii::solution as p260;
+// use p1442_count_triplets_that_can_form_two_arrays_of_equal_xor::solution as p1442;
+use p846_hand_of_straight::solution as p846;
 
 use crate::util::linked_list::ListNode;
 use crate::util::tree_node::Tree;
@@ -284,6 +306,26 @@ fn main() {
     // dbg!(p2816::Solution::double_it(Some(head)));
     // dbg!(p506::Solution::find_relative_ranks(vec![10,3,8,9,4]));
     // dbg!(p786::Solution::kth_smallest_prime_fraction(vec![1, 2, 3, 5], 3));
-    dbg!(p1219::Solution::get_maximum_gold(vec![vec![1,0,7], vec![2,0,6], vec![3,4,5], vec![0,3,0], vec![9,0,20]]));
-
+    // dbg!(p1219::Solution::get_maximum_gold(vec![vec![1,0,7], vec![2,0,6], vec![3,4,5], vec![0,3,0], vec![9,0,20]]));
+    // let a = Tree::from(wrap_vec!["1,2,3,2,null,2,4"]);
+    // dbg!(p1325::Solution::remove_leaf_nodes(a.get_head(), 2));
+    // dbg!(p3068::Solution::maximum_value_sum(vec![1,2,1], 3, vec![vec![0,1], vec![0,2]]));
+    // dbg!(p131::Solution::partition("aabaabaacaabaabaahjiuiklklwefaabbaa".to_string()).len());
+    // dbg!(p2597::Solution::beautiful_subsets(vec![1,4,7,10,2,5], 3));
+    // dbg!(p1255::Solution::max_score_words(
+    //     vec![
+    //         "dog".to_string(),
+    //         "cat".to_string(),
+    //         "dad".to_string(),
+    //         "good".to_string()
+    //     ],
+    //     vec!['a', 'a', 'c', 'd', 'd', 'd', 'g', 'o', 'o'],
+    //     vec![1, 0, 9, 5, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    // ));
+    // dbg!(p140::Solution::word_break("pineapplepenapple".to_string(), vec!["apple".to_string(), "pen".to_string(), "applepen".to_string(), "pine".to_string(), "pineapple".to_string()]));
+    // dbg!(p139::Solution::word_break("dogs".to_string(), vec!["dog".to_string(), "s".to_string(), "gs".to_string()]));
+    // dbg!(p1208::Solution::equal_substring("abcd".to_string(), "bcdf".to_string(), 3));
+    // dbg!(p260::Solution::single_number(vec![1,2,1,3,2,5]));
+    // dbg!(p1442::Solution::count_triplets(vec![2,3,1,6,7]));
+    dbg!(p846::Solution::is_n_straight_hand(vec![1,2,3,6,2,3,4,7,8], 3));
 }
